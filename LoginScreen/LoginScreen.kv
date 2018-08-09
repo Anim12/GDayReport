@@ -1,0 +1,29 @@
+<LoginScreen@BoxLayout>:
+    orientation: 'horizontal'
+    lblTxtIn: 'default'
+    theTxt: Text
+    Label:
+        text: root.lblTxtIn
+    TextInput:
+        id: Text
+        text: root.lblTxtIn
+
+<MyLayout@BoxLayout>:
+    orientation: 'vertical'
+
+    LoginScreen:
+        id: Username
+        lblTxtIn: 'Username'
+        multiline: False
+        
+    LoginScreen:
+        id: Password
+        lblTxtIn: 'Password'
+        password: True
+        multiline: False
+
+    Button:
+        text: 'Login'
+        on_release: print (Username.theTxt.text,Password.theTxt.text)
+
+MyLayout

@@ -1,0 +1,19 @@
+#:kivy 1.0.9
+<UserPage@GridLayout>:
+
+    col: 1
+    rows: 2
+    padding: 10
+    spacing: 10
+
+    Button:
+        id: CreateDayData
+        text: 'Create Day Data'
+        on_release: CreateDayData().run()
+
+    Button:
+        id: ViewDayData
+        text: 'View Day Data'
+        on_release: print ('View Day Book Entered')
+
+UserPage

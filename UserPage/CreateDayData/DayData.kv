@@ -1,0 +1,51 @@
+<DayData@BoxLayout>:
+    orientation: 'horizontal'
+    lblTxtIn: 'default'
+    theTxt: Text
+    Label:
+        text: root.lblTxtIn
+    TextInput:
+        id: Text
+        text: root.lblTxtIn
+
+<MyLayout@BoxLayout>:
+    orientation: 'vertical'
+
+    DayData:
+        id: Date
+        lblTxtIn: 'Date'
+
+    DayData:
+        id: Receiver
+        lblTxtIn: 'Sold to whom'
+
+    DayData:
+        id: Item_name
+        lblTxtIn: 'Item Name'
+
+    DayData:
+        id: Item_amount
+        lblTxtIn: 'Item Amount'
+
+    DayData:
+        id: Item_qty
+        lblTxtIn: 'Item quantity'
+
+    DayData:
+        id: Location
+        lblTxtIn: 'Item sold location'
+
+    DayData:
+        id: Rno
+        lblTxtIn: 'Receipt Number'
+
+    DayData:
+        id: Sale_type
+        lblTxtIn: 'Sale by Cash/Credit'
+
+
+    Button:
+        text: 'Add'
+        on_release: print (Date.theTxt.text, Receiver.theTxt.text, Item_name.theTxt.text,Item_amount.theTxt.text,Item_qty.theTxt.text,Location.theTxt.text,Rno.theTxt.text,Sale_type.theTxt.text)
+
+MyLayout
